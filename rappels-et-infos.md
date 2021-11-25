@@ -68,22 +68,24 @@ Si les deux réseaux calculés sont différents le paquet IP est routé par la s
 
 ---
 
-# Exemple d'une adresse réseau de l'I.U.T.
+# Exemple d'une adresse réseau de l'I.U.T
 
 ![alt w:1000 h:400](ipaddr.png)
 
 ---
 
-# Schéma Réseaux type de l'I.U.T.
+# Schéma Réseaux type de l'I.U.T
 
 ![alt width:1000px height:500px](lan.svg)
 
 ---
 
 # Lister les "devices" réseaux sous Linux
-Vous aurez besoin de connaître le nom de la carte réseau pour y ajouter une adresse IP. 
+
+Vous aurez besoin de connaître le nom de la carte réseau pour y ajouter une adresse IP.
+
 ```bash
-apt -y install lshw
+apt -y install lshw # à faire une fois pour installer le paquet
 sudo lshw -class network -short
 Chemin matériel                   Périphérique   Classe         Description
 ==============================================================================
@@ -102,17 +104,18 @@ Les cartes physiques ethernet commencent par 'en' ou 'eth' pour les machines vir
 # Configuration minimale IP avec routage
 
 Configurer une IP et une route par defaut sous Linux
-(le device )
+
 ```bash
 ip address add 10.213.4.1/16 dev enp12s0
 ip route add default via 10.213.255.254 dev enp12s0
 ```
+
 Cette configuration ne résistera pas à un redémarrage du serveur.
-La configuration de la couche réseau de façon persistante se fait au travers du logiciel "netplan" qui permet de définir en langage Yaml la configuration de l'adressage sur une machine. 
+La configuration de la couche réseau de façon persistante se fait au travers du logiciel "netplan" qui permet de définir en langage Yaml la configuration de l'adressage sur une machine.
 
 ---
 
-#  Exemple de configuration à l'I.U.T.
+# Exemple de configuration à l'I.U.T
 
 Le fichier de configuration se trouve sous /etc/netplan/01-netcfg.yaml. 
 
@@ -128,7 +131,7 @@ network:
 
 ---
 
-# Exemple avec de l'adressage statique, la passerelle par défaut et le DNS de l'IUT.
+# Exemple avec de l'adressage statique, la passerelle par défaut et le DNS de l'IUT
 
 ```yaml
 network:
@@ -156,7 +159,7 @@ sudo netplan apply
 
 ---
 
-# Vous vérifierez votre réussite avec les commandes suivantes:
+# Vous vérifierez votre réussite avec les commandes suivantes :
 
 ```bash
 netplan ip leases eth0 # si dhcp
@@ -168,3 +171,8 @@ ip route show default
 ```
 
 ---
+
+# Conclusion
+
+- Respectez les notations
+- Respectez les icônes, elles sont spécifiques à une fonction réseau.
