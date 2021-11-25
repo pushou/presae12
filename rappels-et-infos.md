@@ -174,5 +174,5 @@ ip route show default
 
 # Conclusion
 
-- Respectez les notations
+- Respectez les notations.
 - Respectez les icônes, elles sont spécifiques à une fonction réseau.

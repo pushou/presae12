@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="7m5kx-TxgvnUOFc1jFXs" name="Page-1">
-        <mxGraphModel dx="706" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="549" dy="429" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -71,8 +71,8 @@
                 <mxCell id="23" value="&lt;h2&gt;&lt;b&gt;&lt;font&gt;SALLE 213&lt;/font&gt;&lt;/b&gt;&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=15;fontColor=#808080;" parent="1" vertex="1">
                     <mxGeometry x="5.5" y="160" width="130" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" value="10.213.0.0/16&lt;br&gt;C'est L'adresse du réseau&lt;br&gt;10.numéro_de_salle" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=15;" parent="1" vertex="1">
-                    <mxGeometry x="121" y="220" width="190" height="60" as="geometry"/>
+                <mxCell id="24" value="10.213.0.0/16&lt;br&gt;C'est l'adresse du réseau&lt;br&gt;10.numéro_de_salle" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="126" y="220" width="180" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="26" value="10.203.0.0/16" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=15;" parent="1" vertex="1">
                     <mxGeometry x="550" y="220" width="110" height="20" as="geometry"/>
