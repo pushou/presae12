@@ -7,6 +7,7 @@ backgroundColor: #fff
 color: black
 header: "SAE12 - Réseaux"
 backgroundImage: url(background-cable.jpg)
+math: katex
 ---
 <!-- backgroundImage: url(background-cable.jpg)-->
 # Ce que vous devez savoir pour la SAE12
@@ -63,7 +64,7 @@ A l'IUT chaque salle dispose d'un réseau supportant $2^{16}$ adresses privées.
 
 # Routage
 
-Quand une station de travail envoie un datagramme IP vers une adresse, elle  applique un ET logique avec le masque de son réseau afin d'obtenir le réseau du destinataire. Par le même mécanisme elle est à même de  connaître aussi son réseau. 
+Quand une station de travail envoie un datagramme IP vers une adresse, elle  applique un ET logique avec le masque de son réseau afin d'obtenir le réseau du destinataire. Par le même mécanisme elle est à même de  connaître aussi son réseau.
 Si les deux réseaux calculés sont différents le paquet IP est routé par la station vers sa passerelle par défaut.
 
 ---
@@ -117,7 +118,7 @@ La configuration de la couche réseau de façon persistante se fait au travers d
 
 # Exemple de configuration à l'I.U.T
 
-Le fichier de configuration se trouve sous /etc/netplan/01-netcfg.yaml. 
+Le fichier de configuration se trouve sous /etc/netplan/01-netcfg.yaml.
 
 ```yaml
 network:
@@ -176,3 +177,5 @@ ip route show default
 
 - Respectez les notations.
 - Respectez les icônes, elles sont spécifiques à une fonction réseau.
+
+---
