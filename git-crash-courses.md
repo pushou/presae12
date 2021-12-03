@@ -37,7 +37,7 @@ Lors de chaque "commit" Git réalise des instantanés de l'état d'un système d
 
 # Indexation des fichiers par Git 
 
-Pour dire à Git que tel fichier doit être suivi (indexé) on fait git add nom_du_fichier
+Pour dire à Git que tel fichier doit être suivi (indexé) on fait git add nom_du_fichier_ajouté
 
 <span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span>
 ![alt width:900px height:300px](git2.png)
