@@ -8,7 +8,7 @@ color: black
 header: "SAE12 - Réseaux"
 backgroundImage: url(background-cable.jpg)
 math: katex
-allowed_elements: h1,h2,h3,h4
+allowed_elements: h1,h2,h3,h4,h5
 ---
 <!-- backgroundImage: url(background-cable.jpg)-->
 # Git pour la SAE12

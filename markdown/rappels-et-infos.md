@@ -17,7 +17,7 @@ math: katex
 # L.A.N. (Local Area Network)
 <!-- backgroundImage: url()-->
 ![bg left](../images/lan1.png)
-**Le LAN c'est un réseau local qui contient des matériels reliés au  réseaux connectés entre eux (PC, serveurs, imprimantes, bornes wifi, smartphone...).**
+**Le LAN c'est le réseau local. Il contient des matériels connectés entre eux (PC, serveurs, imprimantes, bornes wifi, smartphone...).**
 
 ---
 
