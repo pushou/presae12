@@ -27,7 +27,7 @@ Pour les administrateurs systèmes et réseaux on va partager des scripts des co
 
 # Fonctionnement de Git
 
-Git réalise des instantanées de l'état d'un système de fichiers texte chaque fois qu'on effectue un **commit**. Les fichiers peuvent donc être votre compte-rendu de SAE au format Markdown.
+Lors de chaque "commit" Git réalise des instantanés de l'état d'un système de fichiers texte. Les fichiers peuvent donc être votre compte-rendu de SAE au format Markdown.
 <span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span>
 
 ![alt width:900px height:300px](git1.png)
@@ -76,7 +76,7 @@ Pour dire à Git que tel fichier doit être suivi (indexé) on fait git add nom_
 
 # Commit
 
-Sauvegarder et "comittez" le fichier dans le "contrôle de code source", puis synchroniser.
+Sauvegarder et "committez" le fichier dans le "contrôle de code source", puis synchroniser.
 
 ![alt width:900px height:800px](vs4.png)
 
@@ -90,7 +90,8 @@ Sauvegarder et "comittez" le fichier dans le "contrôle de code source", puis sy
 
 # Facultatif
 
-Chantez discrètement une chanson   " il est des notres il a committé comme les autres"
+Chantez discrètement une chanson   " il est des nôtres il a committé sa SAE12 comme les autres"
+feel good...
 
 ---
 
