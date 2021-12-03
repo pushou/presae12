@@ -22,6 +22,7 @@ allowed_elements: h1,h2,h3
 Dans une entreprise il faut partager l'information.
 Pour les développeurs on partage du code.
 Pour les administrateurs systèmes et réseaux on va partager des scripts des configurations.
+Pour vous afin de créer un compte rendu.
 
 ---
 
