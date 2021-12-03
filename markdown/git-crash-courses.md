@@ -17,7 +17,7 @@ allowed_elements: h1,h2,h3
 
 # Git
 <!-- backgroundImage: url()-->
-![bg left width:600px height:600px](baracktocat.jpg)
+![bg left width:600px height:600px](../images/baracktocat.jpg)
 
 Dans une entreprise il faut partager l'information.
 Pour les développeurs on partage du code.
@@ -31,7 +31,7 @@ Pour vous afin de créer un compte rendu.
 Lors de chaque "commit" Git réalise des instantanés de l'état d'un système de fichiers texte. Les fichiers peuvent donc être votre compte-rendu de SAE au format Markdown.
 <span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span>
 
-![alt width:900px height:300px](git1.png)
+![alt width:900px height:300px](../images/git1.png)
 
 ---
 
@@ -40,21 +40,21 @@ Lors de chaque "commit" Git réalise des instantanés de l'état d'un système d
 Pour dire à Git que tel fichier doit être suivi (indexé) on fait git add nom_du_fichier_ajouté
 
 <span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span>
-![alt width:900px height:300px](git2.png)
+![alt width:900px height:300px](../images/git2.png)
 
 ---
 
 # Les différentes aires de Git
 
 <span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span>
-![alt width:900px height:400px](git4.png)
+![alt width:900px height:400px](../images/git4.png)
 
 
 ---
 # Cycle de vie d'un fichier avec Git
 
 <span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span>
-![alt width:900px height:400px](git3.png)
+![alt width:900px height:400px](../images/git3.png)
 
 
 ---
@@ -63,7 +63,7 @@ Pour dire à Git que tel fichier doit être suivi (indexé) on fait git add nom_
 
 1. Créez un compte sur GitHub (prénom.nom) et connectez-vous.
 2. Allez sur  <https://classroom.github.com/a/WsrJSKax> pour initialisez votre repo
-![alt width:900px height:800px](vs1.png)
+![alt width:900px height:800px](../images/vs1.png)
 
 ---
 
@@ -71,7 +71,7 @@ Pour dire à Git que tel fichier doit être suivi (indexé) on fait git add nom_
 
  Créer  un fichier prenom.nom.sae12.md
 
-![alt width:900px height:800px](vs3.png)
+![alt width:900px height:800px](../images/vs3.png)
 
 ---
 
@@ -79,13 +79,13 @@ Pour dire à Git que tel fichier doit être suivi (indexé) on fait git add nom_
 
 Sauvegarder et "committez" le fichier dans le "contrôle de code source", puis synchroniser.
 
-![alt width:900px height:800px](vs4.png)
+![alt width:900px height:800px](../images/vs4.png)
 
 ---
 
 # Résultat sur Github
 
-![alt width:900px height:600px](gh1.png)
+![alt width:900px height:600px](../images/gh1.png)
 
 ---
 
