@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>git-crash-courses.md</title>
+<title>README.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,58 +365,12 @@ code {
           : 'default'
     });
   </script>
-<!-- backgroundImage: url(background-cable.jpg)-->
-<h1 id="git-pour-la-sae12">Git pour la SAE12</h1>
-<hr>
-<h1 id="git">Git</h1>
-<!-- backgroundImage: url()-->
-<p><img src="../images/baracktocat.jpg" alt="bg left width:600px height:600px"></p>
-<p>Dans une entreprise il faut partager l'information.
-Pour les développeurs on partage du code.
-Pour les administrateurs systèmes et réseaux on va partager des scripts des configurations.
-Pour vous afin de créer un compte rendu.</p>
-<hr>
-<h1 id="fonctionnement-de-git">Fonctionnement de Git</h1>
-<p>Lors de chaque &quot;commit&quot; Git réalise des instantanés de l'état d'un système de fichiers texte. Les fichiers peuvent donc être votre compte-rendu de SAE au format Markdown.
-<span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span></p>
-<p><img src="../images/git1.png" alt="alt width:900px height:300px"></p>
-<hr>
-<h1 id="indexation-des-fichiers-par-git">Indexation des fichiers par Git</h1>
-<p>Pour dire à Git que tel fichier doit être suivi (indexé) on fait git add nom_du_fichier_ajouté</p>
-<p><span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span>
-<img src="../images/git2.png" alt="alt width:900px height:300px"></p>
-<hr>
-<h1 id="les-diff%C3%A9rentes-aires-de-git">Les différentes aires de Git</h1>
-<p><span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span>
-<img src="../images/git4.png" alt="alt width:900px height:400px"></p>
-<hr>
-<h1 id="cycle-de-vie-dun-fichier-avec-git">Cycle de vie d'un fichier avec Git</h1>
-<p><span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span>
-<img src="../images/git3.png" alt="alt width:900px height:400px"></p>
-<hr>
-<h1 id="en-action">En action</h1>
-<ol>
-<li>Créez un compte sur GitHub (prénom.nom) et connectez-vous.</li>
-<li>Allez sur  <a href="https://classroom.github.com/a/WsrJSKax">https://classroom.github.com/a/WsrJSKax</a> pour initialisez votre repo
-<img src="../images/vs1.png" alt="alt width:900px height:800px"></li>
-</ol>
-<hr>
-<h1 id="cr%C3%A9ation-de-votre-compte-rendu">Création de votre compte rendu</h1>
-<p>Créer  un fichier prenom.nom.sae12.md</p>
-<p><img src="../images/vs3.png" alt="alt width:900px height:800px"></p>
-<hr>
-<h1 id="commit">Commit</h1>
-<p>Sauvegarder et &quot;committez&quot; le fichier dans le &quot;contrôle de code source&quot;, puis synchroniser.</p>
-<p><img src="../images/vs4.png" alt="alt width:900px height:800px"></p>
-<hr>
-<h1 id="r%C3%A9sultat-sur-github">Résultat sur Github</h1>
-<p><img src="../images/gh1.png" alt="alt width:900px height:600px"></p>
-<hr>
-<h1 id="facultatif">Facultatif</h1>
-<p>Chantez discrètement une chanson   &quot; il est des nôtres il a committé sa SAE12 comme les autres&quot;
-feel good...</p>
-<hr>
-<h1 id="ajoutez--modifiez--commitez-f%C3%A9licitez-vous">Ajoutez , modifiez , commitez, félicitez-vous...</h1>
+<p>Pour avoirs les pré-requis SA12 :</p>
+<p><a href="https://htmlpreview.github.io/?https://github.com/pushou/presae12/blob/main/pdfs/rappels-et-infos.html">https://htmlpreview.github.io/?https://github.com/pushou/presae12/blob/main/pdfs/rappels-et-infos.html</a></p>
+<p><a href="https://htmlpreview.github.io/?https://github.com/pushou/presae12/blob/main/pdfs/git-crash-courses.html">https://htmlpreview.github.io/?https://github.com/pushou/presae12/blob/main/pdfs/git-crash-courses.html</a></p>
+<p>Mémo: générer un fichier html à partir du MarkDown</p>
+<pre class="hljs"><code><div>docker run --rm --init -v <span class="hljs-variable">$PWD</span>:/home/marp/app/ -e MARP_USER=<span class="hljs-string">"<span class="hljs-variable">$(id -u)</span>:<span class="hljs-variable">$(id -g)</span>"</span>  -e LANG=<span class="hljs-variable">$LANG</span> marpteam/marp-cli ./markdown/rappels-et-infos.md --pdf
+</div></code></pre>
 
 </body>
 </html>
