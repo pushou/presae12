@@ -61,7 +61,7 @@ Pour dire à Git que tel fichier doit être suivi (indexé) on fait git add nom_
 # En action
 
 1. Créez un compte sur GitHub (prénom.nom) et connectez-vous.
-2. Allez sur  https://classroom.github.com/a/WsrJSKax pour initialisez votre repo
+2. Allez sur  <https://classroom.github.com/a/WsrJSKax> pour initialisez votre repo
 ![alt width:900px height:800px](vs1.png)
 
 ---
