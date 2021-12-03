@@ -29,7 +29,7 @@ Pour vous afin de créer un compte rendu.
 # Fonctionnement de Git
 
 Lors de chaque "commit" Git réalise des instantanés de l'état d'un système de fichiers texte. Les fichiers peuvent donc être votre compte-rendu de SAE au format Markdown.
-<span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span>
+<span style="font-size:70%"> Source git book <http://git-scm.com/book/fr> CC </span>
 
 ![alt width:900px height:300px](../images/git1.png)
 
@@ -39,21 +39,21 @@ Lors de chaque "commit" Git réalise des instantanés de l'état d'un système d
 
 Pour dire à Git que tel fichier doit être suivi (indexé) on fait git add nom_du_fichier_ajouté
 
-<span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span>
+<span style="font-size:70%"> Source git book <http://git-scm.com/book/fr> CC </span>
 ![alt width:900px height:300px](../images/git2.png)
 
 ---
 
 # Les différentes aires de Git
 
-<span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span>
+<span style="font-size:70%"> Source git book <http://git-scm.com/book/fr> CC </span>
 ![alt width:900px height:400px](../images/git4.png)
 
 
 ---
 # Cycle de vie d'un fichier avec Git
 
-<span style="font-size:70%"> Source git book http://git-scm.com/book/fr CC </span>
+<span style="font-size:70%"> Source git book <http://git-scm.com/book/fr> CC </span>
 ![alt width:900px height:400px](../images/git3.png)
 
 
@@ -96,5 +96,5 @@ feel good...
 
 ---
 
-# Ajoutez , modifiez , commitez, félicitez-vous...
+# Ajoutez , modifiez , commitez, félicitez-vous
 
