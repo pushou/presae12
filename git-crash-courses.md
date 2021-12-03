@@ -62,14 +62,37 @@ Pour dire à Git que tel fichier doit être suivi (indexé) on fait git add nom_
 
 1. Créez un compte sur GitHub (prénom.nom) et connectez-vous.
 2. Allez sur  https://classroom.github.com/a/WsrJSKax pour initialisez votre repo
-3. De votre repo utilisez "Open in Visual Studio Code"
-4. Créer un fichier votre_prénom.votre_nom.sa12.md
-5. Installez les extensions indiquées dans la SAE.
+![alt width:900px height:800px](vs1.png)
 
 ---
 
+# Création de votre compte rendu
 
+ Créer  un fichier prenom.nom.sae12.md
 
-
+![alt width:900px height:800px](vs3.png)
 
 ---
+
+# Commit
+
+Sauvegarder et "comittez" le fichier dans le "contrôle de code source", puis synchroniser.
+
+![alt width:900px height:800px](vs4.png)
+
+---
+
+# Résultat sur Github
+
+![alt width:900px height:600px](gh1.png)
+
+---
+
+# Facultatif
+
+Chantez discrètement une chanson   " il est des notres il a committé comme les autres"
+
+---
+
+# Ajoutez , modifiez , commitez, félicitez-vous...
+
