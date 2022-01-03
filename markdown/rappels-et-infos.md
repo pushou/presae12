@@ -10,7 +10,7 @@ backgroundImage: url(background-cable.jpg)
 math: katex
 ---
 <!-- backgroundImage: url(background-cable.jpg)-->
-# Ce que vous devez savoir pour la SAE12
+# Ce que vous devez savoir impérativement pour la SAE12
 
 ---
 
