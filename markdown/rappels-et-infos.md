@@ -10,7 +10,7 @@ backgroundImage: url(background-cable.jpg)
 math: katex
 ---
 <!-- backgroundImage: url(background-cable.jpg)-->
-# Ce que vous devez savoir pour la SAE12
+# Ce que vous devez savoir impérativement pour la SAE12
 
 ---
 
@@ -64,8 +64,8 @@ A l'IUT chaque salle dispose d'un réseau supportant $2^{16}$ adresses privées.
 
 # Routage
 
-
 Quand une station de travail envoie un datagramme IP vers une adresse, elle applique un ET logique avec le masque de son réseau afin de savoir si le destinataire est sur le même réseau qu'elle. Si les deux stations sont sur le même réseau la station émettrice envoie directement le paquet IP sur son réseau, si ce n'est pas le cas le paquet IP est envoyé vers sa passerelle par défaut.
+
 ---
 
 # Exemple d'une adresse réseau de l'I.U.T
