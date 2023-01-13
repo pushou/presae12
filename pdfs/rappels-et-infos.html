@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>rappels-et-infos.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<!-- backgroundImage: url(background-cable.jpg)-->
+<h1 id="ce-que-vous-devez-savoir-imp%C3%A9rativement-pour-la-sae12">Ce que vous devez savoir impérativement pour la SAE12</h1>
+<hr>
+<h1 id="lan-local-area-network">L.A.N. (Local Area Network)</h1>
+<!-- backgroundImage: url()-->
+<p><img src="../images/lan1.png" alt="bg left">
+<strong>Le LAN c'est le réseau local. Il contient des matériels connectés entre eux (PC, serveurs, imprimantes, bornes wifi, smartphone...).</strong></p>
+<hr>
+<h1 id="switch">SWITCH</h1>
+<p>Un <strong>switch</strong> permet l'échange de paquets ETHERNET entre deux stations situées sur le même LAN (Local Area Network). A l'IUT un LAN = une SALLE mais ils peuvent être plus étendus ou découplés du cable physique (Virtual LAN).</p>
+<p><img src="../images/workgroup-switch.png" alt="bg left width:400px height:400px  "></p>
+<hr>
+<h1 id="routeur">ROUTEUR</h1>
+<p>Un <strong>routeur</strong> permet l'envoi et la réception de paquets IP entre les réseaux. On dit qu'un switches sépare les domaines de collisions et un routeur les domaines de broadcast.
+<img src="../images/router.jpg" alt="bg left width:400px height:400px  "></p>
+<hr>
+<h1 id="dns">DNS</h1>
+<p>Un serveur <strong>DNS</strong> permet de traduire une adresse IP en nom de domaine (F.Q.D.N.)  et réciproquement. L'adresse  IP du DNS interne de l'IUT est 10.255.255.200</p>
+<p><img src="../images/dns-serveur.png" alt="bg left width:300px height:300px"></p>
+<hr>
+<h1 id="dhcp">DHCP</h1>
+<p>Un serveur <strong>DHCP</strong> est chargé de distribuer des adresses IP aux matériels (stations de travail, imprimantes...) présents sur le réseaux.
+Sa présence sur un réseau est utile afin de faciliter la gestion des adresses IP.</p>
+<p><img src="../images/dhcp-server.png" alt="bg left width:300px height:300px"></p>
+<hr>
+<h1 id="adressage-ip">Adressage IP</h1>
+<p>Chaque machine sur le réseau dispose d'une adresse IP. Elle est indispensable pour communiquer entre les stations réseaux.
+Un adresse IPv4 est un identifiant de 32 bits représenté par 4 octets.
+La notation est dite décimale pointée.
+A l'IUT chaque salle dispose d'un réseau supportant $2^{16}$ adresses privées.</p>
+<hr>
+<h1 id="routage">Routage</h1>
+<p>Quand une station de travail envoie un datagramme IP vers une adresse, elle applique un ET logique avec le masque de son réseau afin de savoir si le destinataire est sur le même réseau qu'elle. Si les deux stations sont sur le même réseau la station émettrice envoie directement le paquet IP sur son réseau, si ce n'est pas le cas le paquet IP est envoyé vers sa passerelle par défaut.</p>
+<hr>
+<h1 id="exemple-dune-adresse-r%C3%A9seau-de-liut">Exemple d'une adresse réseau de l'I.U.T</h1>
+<p><img src="../images/ipaddr.png" alt="alt w:1000 h:400"></p>
+<hr>
+<h1 id="sch%C3%A9ma-r%C3%A9seaux-type-de-liut">Schéma Réseaux type de l'I.U.T</h1>
+<p><img src="../images/lan.svg" alt="alt width:1000px height:500px"></p>
+<hr>
+<h1 id="lister-les-%22devices%22-r%C3%A9seaux-sous-linux">Lister les &quot;devices&quot; réseaux sous Linux</h1>
+<p>Vous aurez besoin de connaître le nom de la carte réseau pour y ajouter une adresse IP.</p>
+<pre class="hljs"><code><div>apt -y install lshw <span class="hljs-comment"># à faire une fois pour installer le paquet</span>
+sudo lshw -class network -short
+Chemin matériel                   Périphérique   Classe         Description
+==============================================================================
+/0/100/1c/0                        wlp2s0           network        Wireless 8265 / 8275
+/0/100/1c.4/0/1/0/1/0              enp12s0          network        NetXtreme BCM57761 Gigabit Ethernet 
+/0/100/1f.6                        enp0s31f6        network        Ethernet Connection (5) I219-LM
+/3                                 virbr0-nic       network        Ethernet interface
+/4                                 lan-wrt-nic      network        Ethernet interface
+/5                                 internetwrt-nic  network        Ethernet interface
+</div></code></pre>
+<p>Les cartes physiques ethernet commencent par 'en' ou 'eth' pour les machines virtuelles et les cartes wifi par 'w'.</p>
+<hr>
+<h1 id="configuration-minimale-ip-avec-routage">Configuration minimale IP avec routage</h1>
+<p>Configurer une IP et une route par defaut sous Linux</p>
+<pre class="hljs"><code><div>ip address add 10.213.4.1/16 dev enp12s0
+ip route add default via 10.213.255.254 dev enp12s0
+</div></code></pre>
+<p>Cette configuration ne résistera pas à un redémarrage du serveur.
+La configuration de la couche réseau de façon persistante se fait au travers du logiciel &quot;netplan&quot; qui permet de définir en langage Yaml la configuration de l'adressage sur une machine.</p>
+<hr>
+<h1 id="exemple-de-configuration-%C3%A0-liut">Exemple de configuration à l'I.U.T</h1>
+<p>Le fichier de configuration se trouve sous /etc/netplan/01-netcfg.yaml.</p>
+<pre class="hljs"><code><div><span class="hljs-attr">network:</span>
+  <span class="hljs-attr">version:</span> <span class="hljs-number">2</span>
+  <span class="hljs-attr">renderer:</span> <span class="hljs-string">networkd</span> 
+  <span class="hljs-attr">ethernets:</span>
+    <span class="hljs-attr">enp12s0:</span>
+      <span class="hljs-attr">dhcp4:</span> <span class="hljs-literal">true</span>
+      <span class="hljs-attr">dhcp6:</span> <span class="hljs-literal">false</span>
+</div></code></pre>
+<hr>
+<h1 id="exemple-avec-de-ladressage-statique-la-passerelle-par-d%C3%A9faut-et-le-dns-de-liut">Exemple avec de l'adressage statique, la passerelle par défaut et le DNS de l'IUT</h1>
+<pre class="hljs"><code><div><span class="hljs-attr">network:</span>
+    <span class="hljs-attr">version:</span> <span class="hljs-number">2</span>
+    <span class="hljs-attr">ethernets:</span>
+        <span class="hljs-attr">eth0:</span>
+            <span class="hljs-attr">addresses:</span> <span class="hljs-string">[10.214.1.1/16]</span>
+            <span class="hljs-attr">gateway4:</span> <span class="hljs-number">10.214</span><span class="hljs-number">.255</span><span class="hljs-number">.254</span>
+            <span class="hljs-attr">nameservers:</span>
+                <span class="hljs-attr">addresses:</span> <span class="hljs-string">[10.255.255.200]</span>
+            <span class="hljs-attr">dhcp4:</span> <span class="hljs-literal">false</span>
+            <span class="hljs-attr">dhcp6:</span> <span class="hljs-literal">false</span>
+</div></code></pre>
+<hr>
+<h1 id="commandes-netplan">Commandes Netplan</h1>
+<p>Après modification du fichier yaml (attention l'indentation est essentielle)  vous saisirez les commandes suivantes:</p>
+<pre class="hljs"><code><div>sudo netplan generate 
+sudo netplan apply
+</div></code></pre>
+<hr>
+<h1 id="vous-v%C3%A9rifierez-votre-r%C3%A9ussite-avec-les-commandes-suivantes">Vous vérifierez votre réussite avec les commandes suivantes :</h1>
+<pre class="hljs"><code><div>netplan ip leases eth0 <span class="hljs-comment"># si dhcp</span>
+ip address show device eth0
+networkctl 
+resolvectl  
+resolvectl  query www.iutbeziers.fr
+ip route show default
+</div></code></pre>
+<hr>
+<h1 id="conclusion">Conclusion</h1>
+<ul>
+<li>Respectez les notations.</li>
+<li>Respectez les icônes, elles sont spécifiques à une fonction réseau.</li>
+</ul>
+<hr>
+
+</body>
+</html>
